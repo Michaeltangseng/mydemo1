@@ -1,0 +1,37 @@
+/*设置整体的背景样式*/
+body{
+    background-image: url("../img/flag.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   /*背景图片不会随着页面的滚动而滚动。*/
+    background-size: cover;   /*此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。*/
+    /*为了防止有些浏览器不支持background-size语法,需要添加下述CSS样式设置来满足浏览器的兼容性*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+/*显示文本框样式*/
+.input_show{
+    /*前面有个点是类的意思*/
+    margin-top: 35px;
+    max-width: 260px;
+    height: 35px;
+}
+/*数字按钮样式*/
+.btn_num{
+    margin: 1px;
+    width: 60px;
+}
+
+/*清空按钮样式*/
+.btn_clear{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+/*将背景拉伸，否则在手机上浏览时背景会显示不全*/
+.extendContent{
+    height: 300px;
+}
